@@ -7,6 +7,7 @@
   --navy: #0a2140;
   --slate: #0f2e59;
   --accent: #00df82;
+  --green: #00E676;
   --accent-rgb: 0, 223, 130;
   --highlight: #f59e0b;
   --highlight-rgb: 245, 158, 11;
@@ -186,9 +187,9 @@ p {
 
 .logo-tagline {
   font-family: var(--font-display);
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
-  color: var(--text-muted);
+  color: #00E676;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   margin-left: 1px;
@@ -198,22 +199,40 @@ p {
 .fnb-logo-container {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   font-family: var(--font-sans);
   user-select: none;
 }
 
-.fnb-text {
-  font-size: 24px;
-  letter-spacing: -0.4px;
-  color: #ffffff;
+.fnb-logo-mark {
+  width: 37px;
+  height: 37px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #00E676;
   display: flex;
   align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.fnb-text-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.fnb-text {
+  display: flex;
+  align-items: baseline;
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+  line-height: 1;
 }
 
 .fnb-text .brand-fnb {
   font-style: italic;
-  font-weight: 400;
+  font-weight: 600;
   color: #ffffff;
   margin-right: 3px;
 }
@@ -223,32 +242,8 @@ p {
   color: #00E676;
 }
 
-.fnb-text .brand-360-wrap {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 70px;
-  margin-left: 2px;
-}
-
-.fnb-text .brand-360-ring {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 70px;
-  height: 70px;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  overflow: visible;
-}
-
-.fnb-text .brand-360 {
-  font-weight: 400;
-  color: #ffffff;
-  position: relative;
-  z-index: 1;
-  padding: 0 6px;
+.fnb-pulse-line {
+  margin-top: 1px;
 }
 
 /* Nav Menu */
@@ -268,7 +263,7 @@ p {
   font-family: var(--font-display);
   font-size: 14px;
   font-weight: 500;
-  color: var(--text-muted);
+  color: var(--white);
   text-decoration: none;
   white-space: nowrap;
   transition: color var(--transition-fast);
@@ -310,8 +305,8 @@ p {
 .login-link {
   font-family: var(--font-display);
   font-size: 14px;
-  font-weight: 600;
-  color: var(--text-muted);
+  font-weight: 1200;
+  color: #00E676;
   text-decoration: none;
   transition: color var(--transition-fast);
   white-space: nowrap;
