@@ -39,6 +39,40 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Coming Soon modal (Log In links are not wired up yet)
+  const comingSoonModal = document.getElementById('coming-soon-modal');
+  const comingSoonClose = document.getElementById('coming-soon-close');
+  const loginLinks = document.querySelectorAll('.login-link, .nav-link[href="https://app.fnbpulse.com"]');
+
+  function openComingSoonModal() {
+    comingSoonModal.classList.add('active');
+    comingSoonModal.setAttribute('aria-hidden', 'false');
+  }
+
+  function closeComingSoonModal() {
+    comingSoonModal.classList.remove('active');
+    comingSoonModal.setAttribute('aria-hidden', 'true');
+  }
+
+  loginLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      openComingSoonModal();
+    });
+  });
+
+  if (comingSoonClose) {
+    comingSoonClose.addEventListener('click', closeComingSoonModal);
+  }
+
+  if (comingSoonModal) {
+    comingSoonModal.addEventListener('click', (e) => {
+      if (e.target === comingSoonModal) {
+        closeComingSoonModal();
+      }
+    });
+  }
+
 
   // ==========================================
   // 2. INTERACTIVE PRODUCT SHOWCASE (TABS)

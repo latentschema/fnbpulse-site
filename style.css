@@ -2112,6 +2112,31 @@ p {
 }
 
 /* ==========================================
+   COMING SOON MODAL
+   ========================================== */
+.modal-card-sm {
+  max-width: 380px;
+  padding: 40px 32px;
+  text-align: center;
+}
+
+.coming-soon-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(var(--accent-rgb), 0.3);
+}
+
+.modal-card-sm .modal-intro-text {
+  margin-bottom: 0;
+}
+
+/* ==========================================
    12. INTERACTIVE MODAL: PROFIT HEALTH CHECK
    ========================================== */
 .modal-overlay {
