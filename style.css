@@ -2111,6 +2111,41 @@ p {
   color: var(--white);
 }
 
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 24px 32px 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: center;
+}
+
+.powered-by {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--text-muted);
+  text-decoration: none;
+  opacity: 0.75;
+  transition: opacity var(--transition-fast);
+}
+
+.powered-by:hover {
+  opacity: 1;
+}
+
+.powered-by strong {
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+  transition: color var(--transition-fast);
+}
+
+.powered-by:hover strong {
+  color: var(--white);
+}
+
 /* ==========================================
    COMING SOON MODAL
    ========================================== */
